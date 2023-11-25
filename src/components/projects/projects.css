@@ -1,0 +1,88 @@
+.proMain {
+  height: 75vh;
+  overflow: hidden;
+  background-color: #9db2bf;
+}
+
+.proMain h2 {
+  margin-left: 40%;
+}
+
+.proDiv {
+  /* background-color: aliceblue; */
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  border-radius: 30px;
+  padding: 30px;
+  /* height: 50vh; */
+  width: 20vw;
+}
+
+.prodisplay {
+  /* width: 80vw; */
+  display: flex;
+  gap: 50px;
+  padding-top: 30px;
+  justify-content: center;
+  /* overflow: auto; */
+}
+
+.prodisplay img {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .prodisplay {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 10px;
+    /* flex-direction: column; */
+    /* overflow: ; */
+    /* padding-top: 0%; */
+  }
+
+  .proMain h2 {
+    font-size: 40px;
+    margin-left: 0;
+  }
+
+  .prodisplay img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .prodisplay .proDiv {
+    height: 50vh;
+    width: 50vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .proDiv h4 {
+    font-size: large;
+  }
+
+  .description-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .proMain {
+    height: 80vh;
+  }
+
+  .buttons img {
+    height: 40px;
+    width: 40px;
+  }
+}

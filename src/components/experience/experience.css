@@ -1,0 +1,69 @@
+.backendDiv {
+  background-color: aliceblue;
+  height: max-content;
+  width: fit-content;
+  padding: 30px;
+  margin-left: 70px;
+  font-size: large;
+  border-radius: 30px;
+}
+
+.expMain {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  align-items: center;
+}
+
+.frontendDiv {
+  background-color: aliceblue;
+  height: fit-content;
+  padding: 30px;
+  font-size: large;
+  width: fit-content;
+  border-radius: 30px;
+}
+
+.techDiv {
+  display: flex;
+}
+
+.techText {
+  color: aliceblue;
+  text-align: center;
+}
+
+.techText h2 {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .expMain{
+    align-items: flex-start;
+  }
+  .techDiv {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .techDiv h4{
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .techText h2 {
+    font-size: 40px;
+  }
+
+  .frontendDiv {
+    width: 170px;
+    padding: 15px;
+  }
+
+  .backendDiv {
+    /* width: 170px; */
+    padding: 15px;
+  }
+}
