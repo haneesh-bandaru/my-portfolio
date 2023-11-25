@@ -22,7 +22,7 @@ const projectDetails = [
     title: "Hopecare",
     titleImage: hopecare,
     desc: "A real time application where you can find doctors around your locality and get their appointments.",
-    website: "https://hopecure.vercel.app/",
+    website: "https://hopecare.vercel.app/",
     gitImage: gitEnabled,
     gitLink: "https://github.com/haneesh-bandaru/hopecure",
     state: "",
