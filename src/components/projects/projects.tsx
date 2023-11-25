@@ -1,7 +1,6 @@
 import Image from "next/image";
 import "./projects.css";
 import { Button, Paper, Typography } from "@mui/material";
-import { Github } from "lucide";
 import gitEnabled from "../../assets/gitEnabled.png";
 import gitDisabled from "../../assets/gitDisabled.png";
 import project from "../../assets/project-Images/jntugv.png";
