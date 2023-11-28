@@ -1,0 +1,91 @@
+.aboutdiv {
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 100px;
+  justify-content: center;
+  height: 100vh;
+  color: #27374d;
+}
+
+.imagebox {
+  /* border-radius: 400px; */
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  width: 600px;
+  height: 600px;
+}
+.nameDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 700px;
+}
+
+.nameDiv h2 {
+  font-size: 70px;
+}
+.home-buttons {
+  display: flex;
+  gap: 10px;
+  font-weight: 300;
+  font-size: large;
+  padding: 20px 0px 0px;
+}
+.image-box {
+  /* padding-top: 10px; */
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.role-animation {
+  font-size: 36px;
+  color: #5c5c5c;
+}
+.icons-div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.icons-container {
+  padding: 20px 0px;
+  font-size: 30px;
+}
+
+.home-icons:hover {
+  transform: scale(1.2);
+  color: #27374d;
+}
+@media screen and (max-width: 640px) {
+  .aboutdiv {
+    display: flex;
+    flex-direction: column-reverse;
+    /* font-size: small; */
+  }
+
+  .nameDiv {
+    padding-left: 40px;
+  }
+
+  .nameDiv h2 {
+    font-size: large;
+  }
+
+  .nameDiv h3 {
+    font-size: medium;
+  }
+  .imagebox {
+    width: 360px;
+    height: 360px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+ 
+}
