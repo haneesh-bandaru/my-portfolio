@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "./projects.css";
 import { Button, Paper, Typography } from "@mui/material";
+import { Github } from "lucide";
 import gitEnabled from "../../assets/gitEnabled.png";
 import gitDisabled from "../../assets/gitDisabled.png";
 import project from "../../assets/project-Images/jntugv.png";
@@ -22,7 +23,7 @@ const projectDetails = [
     title: "Hopecare",
     titleImage: hopecare,
     desc: "A real time application where you can find doctors around your locality and get their appointments.",
-    website: "https://hopecare.vercel.app/",
+    website: "https://hopecure.vercel.app/",
     gitImage: gitEnabled,
     gitLink: "https://github.com/haneesh-bandaru/hopecure",
     state: "",

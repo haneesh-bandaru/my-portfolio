@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./about.css";
-import pc from "../../assets/animated-pictures-of-computers-30.jpg";
+import pc from "../../assets/OIG.jpeg";
 import { Paper, Typography } from "@mui/material";
 
 const About = () => {

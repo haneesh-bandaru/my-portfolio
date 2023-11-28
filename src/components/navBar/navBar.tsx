@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./navBar.css"; 
+import { HiMenu } from "react-icons/hi";
+import { RxCross2 } from "react-icons/rx";
+import "./navBar.css"; // Import your CSS file
 import Link from "next/link";
+import menu from "../../../public/menu.svg";
 import { MdMenu } from "react-icons/md";
 
 const navItems = [
@@ -30,7 +33,10 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
 
-
+  const toggleNav = (name) => {
+    setIsOpen(!isOpen);
+    setActiveIndex(name === activeIndex ? null : name);
+  };
   const [scrollPosition, setScrollPosition] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
@@ -64,18 +70,18 @@ const NavBar = () => {
             isOpen ? "nav-items-open" : "nav-items-closed"
           }`}
         >
-          <button  className="navbar-menu-icon">
+          <button onClick={toggleNav} className="navbar-menu-icon">
             <MdMenu />
           </button>
 
           <ul className={`nav-links ${!isOpen ? "nav-links-closed" : ""}`}>
-            <button  className="navbar-close-icon">
+            <button onClick={toggleNav} className="navbar-close-icon">
               <MdMenu />
             </button>
             {navItems.map((item) => (
               <li key={item.id} className="nav-item">
                 <a
-                  
+                  onClick={() => toggleNav(item.name)}
                   href={`#${item.name}`}
                   className={`nav-link ${
                     item.name === activeIndex ? "nav-link-active" : ""

@@ -3,18 +3,21 @@ import "./home.css";
 import haneeshImage from "../../assets/HaneeshBandaru.png";
 import { Button } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
+import { MdCode } from "react-icons/md";
 import {
   AiFillTwitterCircle,
   AiFillGithub,
   AiFillInstagram,
+  AiFillCode,
 } from "react-icons/ai";
-import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
+import gCode from "../../assets/googleCode.svg";
+import { FaCode, FaFacebook, FaLinkedinIn } from "react-icons/fa";
 
 const Homed = () => {
   return (
     <main className="aboutdiv">
       <div className="nameDiv">
-        <h2  data-aos="fade-up">{`Hey, I'm Haneesh Bandaru`}</h2>
+        <h2 data-aos="fade-up">{`Hey, I'm Haneesh Bandaru`}</h2>
         <div>
           <TypeAnimation
             data-aos="fade-up"
@@ -28,7 +31,10 @@ const Homed = () => {
             <Button variant="contained" style={{ backgroundColor: "#27374D" }}>
               Contact
             </Button>
-            <Button variant="contained" style={{ color: "#27374D", backgroundColor: "#ffffff" }}>
+            <Button
+              variant="contained"
+              style={{ color: "#27374D", backgroundColor: "#ffffff" }}
+            >
               Resume
             </Button>
           </div>
@@ -39,29 +45,35 @@ const Homed = () => {
               className="icons-div"
             >
               <p>
-                <a href="https://github.com/haneesh-bandaru">
+                <a href="https://github.com/haneesh-bandaru" target="_blank">
                   {" "}
                   <AiFillGithub className="home-icons" />{" "}
                 </a>
               </p>
               <p>
-                <a href="https://www.linkedin.com/in/haneesh-bandaru/">
+                <a
+                  href="https://www.linkedin.com/in/haneesh-bandaru/"
+                  target="_blank"
+                >
                   {" "}
                   <FaLinkedinIn className="home-icons" />{" "}
                 </a>
               </p>
               <p>
-                <a href="https://www.instagram.com/ig.hanee.11/">
+                <a
+                  href="https://www.instagram.com/ig.hanee.11/"
+                  target="_blank"
+                >
                   <AiFillInstagram className="home-icons" />
                 </a>
               </p>
               <p>
-                <a href="">
-                  <FaFacebook className="home-icons" />{" "}
+                <a href="https://g.dev/haneeshbandaru" target="_blank">
+                  <MdCode className="home-icons" />
                 </a>
               </p>
               <p>
-                <a href="https://twitter.com/haneesh_bandaru">
+                <a href="https://twitter.com/haneesh_bandaru" target="_blank">
                   {" "}
                   <AiFillTwitterCircle className="home-icons" />{" "}
                 </a>
@@ -70,7 +82,7 @@ const Homed = () => {
           </div>
         </div>
       </div>
-      <div  data-aos="fade-up" className="image-box">
+      <div data-aos="fade-up" className="image-box">
         {" "}
         <Image
           src={haneeshImage}
