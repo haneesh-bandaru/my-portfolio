@@ -33,10 +33,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const toggleNav = (name) => {
-    setIsOpen(!isOpen);
-    setActiveIndex(name === activeIndex ? null : name);
-  };
+
   const [scrollPosition, setScrollPosition] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
@@ -70,19 +67,18 @@ const NavBar = () => {
             isOpen ? "nav-items-open" : "nav-items-closed"
           }`}
         >
-          <button onClick={toggleNav} className="navbar-menu-icon">
+          <button  className="navbar-menu-icon">
             <MdMenu />
           </button>
 
           <ul className={`nav-links ${!isOpen ? "nav-links-closed" : ""}`}>
-            <button onClick={toggleNav} className="navbar-close-icon">
+            <button  className="navbar-close-icon">
               <MdMenu />
             </button>
             {navItems.map((item) => (
               <li key={item.id} className="nav-item">
                 <a
-                  onClick={() => toggleNav(item.name)}
-                  href={`#${item.name}`}
+            
                   className={`nav-link ${
                     item.name === activeIndex ? "nav-link-active" : ""
                   }`}
