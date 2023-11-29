@@ -60,7 +60,7 @@ const projectDetails = [
 const Projects = () => {
   return (
     <main className="proMain">
-      <Typography variant="h2">Projects</Typography>
+      <Typography variant="h3">PROJECTS</Typography>
       <div>
         <div className="prodisplay">
           {projectDetails.map((item, index) => (

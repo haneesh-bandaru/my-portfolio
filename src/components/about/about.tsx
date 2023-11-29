@@ -14,7 +14,7 @@ const About = () => {
       }}
     >
       <div className="textDiv">
-        <Typography variant="h3">About Me</Typography>
+        <Typography variant="h3">ABOUT ME</Typography>
       </div>
       <div className="about-mid">
         <Paper className="imageTextWeb" elevation={16}>
