@@ -2,11 +2,11 @@ import { Paper, TextField, Typography } from "@mui/material";
 import "./contactme.css";
 import mail from "../../assets/mail.svg";
 import Image from "next/image";
-import Link from "next/link";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const contactme = () => {
   return (
-    <div style={{ backgroundColor: "#9db2bf", justifyContent:"center" }}>
+    <div style={{ backgroundColor: "#9db2bf", justifyContent: "center" }}>
       <div className="contact-main">
         <div className="contact-text">
           <h4>Get in Touch</h4>
@@ -18,6 +18,7 @@ const contactme = () => {
                 alt="Email icon"
                 className="icon contact-icon email-icon"
               />
+
               <p>
                 <a href="mailto:haneeshbandaru@gmail.com">
                   haneeshbandaru@gmail.com
@@ -25,11 +26,7 @@ const contactme = () => {
               </p>
             </div>
             <div className="contact-info-container">
-              <Image
-                src={mail}
-                alt="LinkedIn icon"
-                className="icon contact-icon"
-              />
+              <FaLinkedinIn className="icon contact-icon" />
               <p>
                 <a href="https://www.linkedin.com">LinkedIn</a>
               </p>
