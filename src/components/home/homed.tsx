@@ -8,10 +8,8 @@ import {
   AiFillTwitterCircle,
   AiFillGithub,
   AiFillInstagram,
-  AiFillCode,
 } from "react-icons/ai";
-import gCode from "../../assets/googleCode.svg";
-import { FaCode, FaFacebook, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Homed = () => {
   return (
