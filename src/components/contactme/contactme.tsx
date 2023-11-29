@@ -28,7 +28,9 @@ const contactme = () => {
             <div className="contact-info-container">
               <FaLinkedinIn className="icon contact-icon" />
               <p>
-                <a href="https://www.linkedin.com">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/haneesh-bandaru/">
+                  LinkedIn
+                </a>
               </p>
             </div>
           </div>
