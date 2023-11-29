@@ -3,7 +3,6 @@ import Paper from "@mui/material/Paper";
 import "./mytechstack.css";
 import { Typography } from "@mui/material";
 
-
 const frontend = [
   { image: "", name: "React js" },
   { image: "", name: "Next js" },
@@ -28,7 +27,7 @@ const Experience = () => {
   return (
     <main className="expMain">
       <div className="techText">
-        <Typography variant="h2">My Proficiencies</Typography>
+        <Typography variant="h3">MY PROFICIENCIES</Typography>
       </div>
       <div className="techDiv">
         <Paper className="frontendDiv" elevation={24}>
