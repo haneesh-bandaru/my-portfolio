@@ -1,3 +1,17 @@
-.timeline-main{
-    background-color: #9db2bf;
+.timeline-main {
+  background-color: #9db2bf;
+  display: flex;
+  flex-direction: row;
+  height: 75vh;
 }
+
+.line {
+  width: 20px;
+  color: black;
+  border-top: 1px solid black;
+  margin-top: 50%;
+}
+
+/* timelineevent.css */
+
+
