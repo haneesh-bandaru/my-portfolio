@@ -1,151 +1,49 @@
 .about-main {
   padding-top: 30px;
 }
-
 .textDiv {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.aboutText {
-  background-color: "#526D82";
-  width: fit-content;
-}
-
-.aboutImage {
-  margin-top: 40px;
-  border-radius: 400px;
-  margin-left: 60px;
-  margin-right: 0px;
-}
-
-.imageTextWeb {
-  padding: 20px;
-  margin-left: 130px;
-  width: 30vw;
-  background-color: #dde6ed;
-  border-radius: 40px;
-}
-
-.imageTextPhone {
-  display: none;
-}
-
-.about-mid {
-  display: flex;
 }
 
 .textDiv h3 {
   margin-left: 40%;
 }
 
-@media only screen and (max-width: 600px) {
-  .textDiv h3 {
-    padding-top: 15px;
-    margin-left: 0;
-    font-size: 35px;
-    padding-left: 0vw;
-  }
-
-  .about-mid {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0vw;
-  }
-
-  .about-main .imageTextPhone {
-    display: block;
-    height: min-content;
-    width: 90vw;
-    margin-left: 0;
-    background-color: #dde6ed;
-    border-radius: 40px;
-    padding: 20px;
-    margin-top: 30px;
-  }
-
-  .imageTextWeb {
-    display: none;
-  }
-
-  .about-image {
-    display: none;
-  }
-}
-
-.about-main{
-  padding-top: 30px;
-}
-
-.textDiv {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.aboutText {
-  background-color: "#526D82";
-  width: fit-content;
-}
-
-.aboutImage {
-  padding-top: 40px;
-  border-radius: 400px;
-  padding-left: 60px;
-  padding-right: 0px;
-}
-
-.imageTextWeb {
-  padding: 20px;
-  margin-left: 130px;
-  width: 30vw;
-  background-color: #dde6ed;
-  border-radius: 40px;
-}
-
-.imageTextPhone {
-  display: none;
-}
-
 .about-mid {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  margin-top: 2rem;
+  margin-right: 15rem;
+  gap: 2rem;
+}
+.details-container {
+  padding: 1.5rem;
+  /* flex: 0.5; */
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  width: 20rem;
+  height: 10rem;
+}
+
+.about-right {
+  width: 70rem;
+}
+
+.about-div {
   display: flex;
 }
 
-.textDiv h3 {
-  margin-left: 40%;
+.about-me-text {
+  padding: 20px;
+  width: 40rem;
 }
 
-@media only screen and (max-width: 600px) {
-
-
-  .textDiv h3 {
-    padding-top: 15px;
-    margin-left: 0;
-    font-size: 35px;
-    padding-left: 0vw;
-  }
-
-  .about-mid {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0vw;
-  }
-
-  .about-main .imageTextPhone {
-    display: block;
-    height: min-content;
-    width: 90vw;
-    margin-left: 0;
-    background-color: #dde6ed;
-    border-radius: 40px;
-    padding: 20px;
-    margin-top: 30px;
-  }
-
-  .imageTextWeb {
-    display: none;
-  }
-
-  .about-image {
-    display: none;
-  }
+.icon {
+  cursor: pointer;
+  height: 2rem;
 }
