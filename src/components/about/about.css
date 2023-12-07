@@ -36,6 +36,7 @@
 
 .about-div {
   display: flex;
+  justify-content: center;
 }
 
 .about-me-text {
