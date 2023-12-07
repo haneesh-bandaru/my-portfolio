@@ -1,10 +1,10 @@
 import Image from "next/image";
 import "./about.css";
-import pc from "../../assets/OIG.jpeg";
+// import pc from "../../assets/OIG.jpeg";
 import { Paper, Typography } from "@mui/material";
 import experience from "../../assets/experience.png";
 import education from "../../assets/education.png";
-import myImg from "../../assets/HaneeshBandaru.png";
+// import myImg from "../../assets/HaneeshBandaru.png";
 
 const About = () => {
   return (
@@ -20,9 +20,9 @@ const About = () => {
         <Typography variant="h3">ABOUT ME</Typography>
       </div>
       <div className="about-div">
-        <div className="about-left">
+        {/* <div className="about-left">
           <Image src={myImg} alt="" height={"500"} width={"500"}/>
-        </div>
+        </div> */}
         <div className="about-right">
           <div className="about-mid">
             <div className="details-container">
