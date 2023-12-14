@@ -29,7 +29,7 @@ const stack = [
 
 const Experience = () => {
   return (
-    <main className="expMain">
+    <main className="expMain" id="skills">
       <div className="techText">
         <Typography variant="h3">MY PROFICIENCIES</Typography>
       </div>

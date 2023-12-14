@@ -67,12 +67,12 @@ const projectDetails = [
 
 const Projects = () => {
   return (
-    <main className="proMain">
+    <main className="proMain" id="projects">
       <Typography variant="h3">PROJECTS</Typography>
       <div>
         <div className="prodisplay">
           {projectDetails.map((item, index) => (
-            <Paper key={index} className="proDiv" elevation={5}>
+            <Paper style={{minWidth:"21em"}} key={index} className="proDiv" elevation={5}>
               <div>
                 <Typography variant="h5">{item.title}</Typography>
                 <Image
@@ -83,7 +83,7 @@ const Projects = () => {
                 />
               </div>
               <div className="description-div">
-                <Typography variant="body2" className="description-desc">
+                <Typography variant="body1" className="description-desc">
                   {item.desc}
                 </Typography>
               </div>
@@ -97,7 +97,7 @@ const Projects = () => {
                 className="buttons"
               >
                 <Button variant="outlined" href={item.website} target="_blank">
-                  Website
+                  View Project
                 </Button>
                 <Button
                   variant="text"

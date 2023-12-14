@@ -32,9 +32,10 @@
   border-radius: 10px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 676px) {
   .prodisplay {
     display: flex;
+    width: auto;
     justify-content: flex-start;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -48,15 +49,18 @@
     justify-content: center;
   }
 
+  .proMain {
+    height: auto;
+  }
+
   .prodisplay img {
-    height: 70px;
-    width: 70px;
+    align-items: center;
   }
 
   .prodisplay .proDiv {
     justify-content: center;
-    height: 27rem;
-    width: 300rem;
+    height: auto;
+    width: 30rem;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
@@ -75,13 +79,6 @@
     align-content: center;
   }
 
-  .description-desc {
-    text-align: center;
-  }
-
-  .proMain {
-    height: 80vh;
-  }
 
   .buttons img {
     height: 40px;

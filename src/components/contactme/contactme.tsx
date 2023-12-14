@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const contactme = () => {
   return (
-    <div style={{ backgroundColor: "#9db2bf", justifyContent: "center" }}>
+    <div style={{ backgroundColor: "#9db2bf", justifyContent: "center" }} id="contact"> 
       <div className="contact-main">
         <div className="contact-text">
           <h4>Get in Touch</h4>
