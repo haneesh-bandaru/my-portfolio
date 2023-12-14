@@ -5,11 +5,11 @@ import { Button } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
 import { MdCode } from "react-icons/md";
 import {
-  AiFillTwitterCircle,
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Homed = () => {
   return (
@@ -73,7 +73,7 @@ const Homed = () => {
               <p>
                 <a href="https://twitter.com/haneesh_bandaru" target="_blank">
                   {" "}
-                  <AiFillTwitterCircle className="home-icons" />{" "}
+                  <FaSquareXTwitter className="home-icons" />
                 </a>
               </p>
             </div>

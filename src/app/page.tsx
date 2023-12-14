@@ -14,7 +14,6 @@ export default function Home() {
       <Homed />
       <About />
       <Experience />
-      {/* <Timelineevent /> */}
       <Projects />
       <Contactme />
     </main>
