@@ -1,9 +1,9 @@
 .contact-main {
   height: 40vh;
-  background-color: #9db2bf;
   flex-direction: row;
   display: flex;
   align-items: center;
+  background-color: #dde6ed;
   justify-content: space-around;
 }
 
@@ -37,6 +37,7 @@
   align-items: center;
   font-size: large;
   padding-bottom: 10px;
+  background-color: #dde6ed;
 }
 
 .contact-form form {

@@ -1,17 +1,21 @@
 .timeline-main {
   background-color: #9db2bf;
-  display: flex;
-  flex-direction: row;
-  height: 75vh;
+  /* height: 75vh; */
+  padding-top: 30px;
+}
+.textDiv h3 {
+  margin-left: 40%;
 }
 
-.line {
-  width: 20px;
-  color: black;
-  border-top: 1px solid black;
-  margin-top: 50%;
+.timeline-dash {
+  z-index: 10;
 }
 
-/* timelineevent.css */
-
-
+@media only screen and (max-width: 676px) {
+  .textDiv h3 {
+    font-size: 40px;
+    margin-left: 0%;
+    display: flex;
+    justify-content: center;
+  }
+}

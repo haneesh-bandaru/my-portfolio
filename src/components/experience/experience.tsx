@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Paper from "@mui/material/Paper";
 import "./experience.css";
 import { Typography } from "@mui/material";

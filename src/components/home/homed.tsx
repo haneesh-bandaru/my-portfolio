@@ -5,7 +5,6 @@ import { Button } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
 import { MdCode } from "react-icons/md";
 import {
-  AiFillTwitterCircle,
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";

@@ -9,24 +9,24 @@
 }
 
 .expMain {
-  height: 80vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   padding-top: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
   align-items: center;
-}
-
-.frontendDiv {
-  background-color: aliceblue;
-  height: fit-content;
-  padding: 30px;
-  font-size: large;
-  width: fit-content;
-  border-radius: 30px;
 }
 
 .techDiv {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
 
 .techText {
@@ -38,23 +38,40 @@
   color: black;
 }
 
+.mytech-display {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
 @media only screen and (max-width: 600px) {
-  .expMain{
-    align-items: flex-start;
+  .expMain {
+    /* align-items: flex-start; */
+    height: auto;
+    padding: 0px;
+    padding-bottom: 10px;
   }
   .techDiv {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: row; */
     margin: 0;
+    padding: 0px;
   }
 
-  .techDiv h4{
-    font-size: larger;
+  .techDiv h4 {
+    font-size: large;
     font-weight: bold;
   }
 
-  .techText h2 {
+  .techText h4 {
     font-size: 40px;
+    padding: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
   }
 
   .frontendDiv {

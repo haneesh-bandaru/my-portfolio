@@ -4,19 +4,18 @@ import "./about.css";
 import { Paper, Typography } from "@mui/material";
 import experience from "../../assets/experience.png";
 import education from "../../assets/education.png";
-// import myImg from "../../assets/HaneeshBandaru.png";
+import myImg from "../../assets/HaneeshBandaru.png";
 
 const About = () => {
   return (
     <main
-      className="about-main"
+      className="about-main1"
       style={{
         backgroundColor: "#9DB2BF",
-        height: "75vh",
         paddingLeft: "5vw",
       }}
     >
-      <div className="textDiv">
+      <div className="textDiv2">
         <Typography variant="h3">ABOUT ME</Typography>
       </div>
       <div className="about-div">

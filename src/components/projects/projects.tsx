@@ -13,7 +13,9 @@ const projectDetails = [
   {
     title: "University Website",
     titleImage: project,
-    desc: "I have led the frontend for this project with my team.",
+    desc: `As the Front-End Lead for our university website, I spearheaded the development of a comprehensive
+    platform—a one-stop solution for every student. We meticulously crafted a user-friendly interface and
+    experience, ensuring seamless navigation.`,
     website: "https://jntugv.edu.in/",
     gitImage: gitDisabled,
     gitLink: "",
@@ -22,7 +24,9 @@ const projectDetails = [
   {
     title: "Hopecare",
     titleImage: hopecare,
-    desc: "A real time application where you can find doctors around your locality and get their appointments.",
+    desc: `HopeCare, a pioneering application, transforms healthcare access by connecting users with local doctors,
+            allowing appointments irrespective of the doctor's hospital. It features two search options—geographical
+            and profession-based—providing a streamlined and personalized healthcare experience.`,
     website: "https://hopecure.vercel.app/",
     gitImage: gitEnabled,
     gitLink: "https://github.com/haneesh-bandaru/hopecure",
@@ -31,7 +35,9 @@ const projectDetails = [
   {
     title: "Calculator App",
     titleImage: calculator,
-    desc: "React-powered calculator app for effortless math magic – where simplicity meets precision.",
+    desc: `Experience the power of seamless calculations with our React Calculator App. Engineered 
+          with the latest web technologies, this application combines the efficiency of React.js 
+          with an intuitive user interface, delivering a responsive and interactive calculator experience.`,
     website: "https://calculator-using-react.by-haneesh.vercel.app/",
     gitImage: gitEnabled,
     gitLink: "https://github.com/haneesh-bandaru/Calculator_Using_react",
@@ -40,7 +46,9 @@ const projectDetails = [
   {
     title: "Climate Compass",
     titleImage: climatecompass,
-    desc: "Explore the weather with ease using this simple and intuitive React-based weather app – your pocket-sized meteorologist",
+    desc: `Climate Compass is an intuitive application meticulously crafted for obtaining real-time weather updates
+          globally through a user-friendly search interface. Stay informed about weather conditions across the world
+          effortlessly with Climate Compass`,
     website: "https://climatecompass.vercel.app/",
     gitImage: gitEnabled,
     gitLink: "https://github.com/haneesh-bandaru/hopecure",
@@ -75,7 +83,9 @@ const Projects = () => {
                 />
               </div>
               <div className="description-div">
-                <Typography variant="body2">{item.desc}</Typography>
+                <Typography variant="body2" className="description-desc">
+                  {item.desc}
+                </Typography>
               </div>
               <div
                 style={{
@@ -84,7 +94,7 @@ const Projects = () => {
                   justifyContent: "space-around",
                   marginBlockStart: "auto",
                 }}
-                 className="buttons"
+                className="buttons"
               >
                 <Button variant="outlined" href={item.website} target="_blank">
                   Website
