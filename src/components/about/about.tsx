@@ -9,6 +9,7 @@ import myImg from "../../assets/HaneeshBandaru.png";
 const About = () => {
   return (
     <main
+      id="about"
       className="about-main1"
       style={{
         backgroundColor: "#9DB2BF",
@@ -54,7 +55,8 @@ const About = () => {
             </div>
           </div>
           <div className="about-me-text">
-            {`Hello! I'm Haneesh Bandaru, an experienced web developer with over a
+            <Typography variant="h5">
+              {`Hello! I'm Haneesh Bandaru, an experienced web developer with over a
           year of hands-on experience crafting dynamic and user-friendly digital
           experiences. Specializing in frontend development using React JS,
           Angular JS, and Next JS, I ensure seamless and responsive user
@@ -63,6 +65,7 @@ const About = () => {
           passion for clean, efficient code, I bring a keen eye for detail to
           every project. Let's build the future of the web together, one line of
           code at a time!`}
+            </Typography>
           </div>
         </div>
       </div>

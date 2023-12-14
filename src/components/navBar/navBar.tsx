@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { HiMenu } from "react-icons/hi";
-import { RxCross2 } from "react-icons/rx";
 import "./navBar.css"; // Import your CSS file
 import Link from "next/link";
-import menu from "../../../public/menu.svg";
-import { MdMenu } from "react-icons/md";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const navItems = [
   {
@@ -13,15 +10,15 @@ const navItems = [
   },
   {
     id: 1,
-    name: "skills",
+    name: "about",
   },
   {
     id: 2,
-    name: "works",
+    name: "skills",
   },
   {
     id: 3,
-    name: "resume",
+    name: "projects",
   },
   {
     id: 4,
@@ -31,8 +28,6 @@ const navItems = [
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(null);
-
 
   const [scrollPosition, setScrollPosition] = useState(0);
   useEffect(() => {
@@ -67,30 +62,33 @@ const NavBar = () => {
             isOpen ? "nav-items-open" : "nav-items-closed"
           }`}
         >
-          <button  className="navbar-menu-icon">
-            <MdMenu />
-          </button>
-
-          <ul className={`nav-links ${!isOpen ? "nav-links-closed" : ""}`}>
-            <button  className="navbar-close-icon">
-              <MdMenu />
-            </button>
-            {navItems.map((item) => (
-              <li key={item.id} className="nav-item">
-                <a
+          <div className="menu-icon-items">
             
-                  className={`nav-link ${
-                    item.name === activeIndex ? "nav-link-active" : ""
-                  }`}
-                >
-                  {item.name}
-                </a>
-              </li>
-            ))}
-            <a href="mailto:haneeshbandaru@gmail.com" className="hire-button">
-              HIRE ME
-            </a>
-          </ul>
+            <button
+              style={{ borderStyle: "none", backgroundColor: "inherit" }}
+              className="menu-button"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <RxHamburgerMenu style={{ width: "2rem", height: "2rem" }} />
+            </button>
+
+            <ul className={isOpen ? `nav-links-display` : `nav-link-off`}>
+              {navItems.map((item) => (
+                <li key={item.id} className="nav-item">
+                  <a
+                    className={`nav-link `}
+                    href={`#${item.name}`}
+                    onClick={() => setIsOpen(!isOpen)}
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+              <a href="mailto:haneeshbandaru@gmail.com" className="hire-button">
+                HIRE ME
+              </a>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>

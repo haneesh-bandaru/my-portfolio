@@ -1,19 +1,16 @@
 import Image from "next/image";
 import "./home.css";
 import haneeshImage from "../../assets/HaneeshBandaru.png";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
 import { MdCode } from "react-icons/md";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Homed = () => {
   return (
-    <main className="aboutdiv">
+    <main className="aboutdiv" id="home">
       <div className="nameDiv">
         <h2 data-aos="fade-up">{`Hey, I'm Haneesh Bandaru`}</h2>
         <div>
@@ -33,7 +30,18 @@ const Homed = () => {
               variant="contained"
               style={{ color: "#27374D", backgroundColor: "#ffffff" }}
             >
-              Resume
+              {/* <a href="../../assets/downloads/haneeshbiosketch.pdf" download style={{textDecoration:"none",color:"#27374D",fontWeight:"400"}}> */}
+              <a
+                href="https://drive.google.com/file/d/1381o7B0VUk4fnegWkFYff4zC7lUTwRs6/view?usp=sharing"
+                target="_blank"
+                style={{
+                  textDecoration: "none",
+                  color: "#27374D",
+                  fontWeight: "400",
+                }}
+              >
+                <Typography>Resume</Typography>
+              </a>
             </Button>
           </div>
           <div className="icons-container">
@@ -59,7 +67,7 @@ const Homed = () => {
               </p>
               <p>
                 <a
-                  href="https://www.instagram.com/ig.hanee.11/"
+                  href="https://www.instagram.com/haneesh_bandaru/"
                   target="_blank"
                 >
                   <AiFillInstagram className="home-icons" />

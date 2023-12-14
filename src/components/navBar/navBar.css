@@ -13,7 +13,7 @@
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 .role-animation {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 .navbar-content {
   margin: 0 auto;
@@ -44,10 +44,19 @@
 .nav-items {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  /* gap: 1.25rem; */
 }
 
-.nav-links {
+.nav-links-display {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 44px;
+}
+
+.nav-link-off {
   display: flex;
   align-items: center;
   gap: 1.25rem;
@@ -83,13 +92,13 @@
   font-weight: bold;
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
   color: #f1c40f;
 }
 
 .nav-link-active {
   color: #f1c40f;
-}
+} */
 
 /* Hire Me Button */
 .hire-button {
@@ -103,10 +112,13 @@
   cursor: pointer;
   display: inline-block;
 }
-
-.hire-button:hover {
-  color: #f1c40f;
+.menu-button {
+  display: none;
 }
+
+/* .hire-button:hover {
+  color: #f1c40f;
+} */
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -114,34 +126,51 @@
     display: block;
   }
 
-  .nav-links {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: -100%;
-    width: 78%;
-    height: 100vh;
-    background-color: #fff;
-    transition: right 0.3s ease;
+  
+  .navbar-content{
+    max-height: 2rem;
   }
 
   .navbar-close-icon {
     display: block;
   }
 
-  .nav-links-closed {
-    right: -100%;
-  }
-
-  .nav-links-open {
-    right: 0;
-  }
   .home-icons {
     height: 1.8rem;
     width: 1.8rem;
   }
 
-  .navbar-content{
+  .navbar-content {
     padding-left: 0;
+  }
+
+  .menu-button {
+    display: block;
+    margin-left: 5rem;
+  }
+
+  .nav-links-display {
+    /* margin-top: 15rem; */
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: max-content;
+    padding: 10px;
+    margin-left: 0;
+
+  }
+
+  .nav-link-off {
+    display: none;
+  }
+
+  .menu-icon-items{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-height: 1rem;
+    max-width: 1px;
+    align-items: end;
   }
 }
