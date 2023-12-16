@@ -31,7 +31,7 @@ const Experience = () => {
   return (
     <main className="expMain" id="skills">
       <div className="techText">
-        <Typography variant="h3">MY PROFICIENCIES</Typography>
+        <Typography variant="h3">MY TOOLS</Typography>
       </div>
       <Stack className="techDiv" direction={"row"} spacing={2}>
         {stack.map((item, index) => (
