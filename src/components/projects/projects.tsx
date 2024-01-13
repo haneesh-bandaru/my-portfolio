@@ -27,7 +27,7 @@ const projectDetails = [
     desc: `HopeCare, a pioneering application, transforms healthcare access by connecting users with local doctors,
             allowing appointments irrespective of the doctor's hospital. It features two search options—geographical
             and profession-based—providing a streamlined and personalized healthcare experience.`,
-    website: "https://hopecure.vercel.app/",
+    website: "https://hopecare.vercel.app/",
     gitImage: gitEnabled,
     gitLink: "https://github.com/haneesh-bandaru/hopecure",
     state: "",
