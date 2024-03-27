@@ -12,11 +12,13 @@ import css from "@/assets/images/tech-stack/css.svg";
 import vscode from "@/assets/images/tech-stack/vscode.svg";
 import angular from "@/assets/images/tech-stack/angularjs.svg";
 import material from "@/assets/images/material-ui.svg";
+import expo from "@/assets/images/expo.svg";
 
 const stack = [
   { image: react, name: "React js" },
   { image: next, name: "Next js" },
   { image: react, name: "React Native" },
+  { image: expo, name: "Expo" },
   { image: Github, name: "Github" },
 
   { image: figma, name: "Figma" },
@@ -24,7 +26,7 @@ const stack = [
   { image: java, name: "Java" },
   { image: html, name: "HTML" },
   { image: css, name: "CSS" },
-  { image: vscode, name: "VS Code" },
+  // { image: vscode, name: "VS Code" },
   { image: angular, name: "Angular" },
   { image: material, name: "Material UI" },
 ];

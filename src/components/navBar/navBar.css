@@ -74,7 +74,7 @@
   cursor: pointer;
   position: relative;
   right: 0;
-  top: 0.75rem;
+  /* top: 0.75rem; */
   display: none;
 }
 
@@ -123,12 +123,8 @@
 /* Media Queries */
 @media (max-width: 768px) {
   .navbar-menu-icon {
-    display: block;
-  }
-
-  
-  .navbar-content{
-    max-height: 2rem;
+    display: flex;
+    margin-left: 10px;
   }
 
   .navbar-close-icon {
@@ -142,11 +138,13 @@
 
   .navbar-content {
     padding-left: 0;
+    padding-right: 10px;
   }
 
   .menu-button {
     display: block;
     margin-left: 5rem;
+    margin-top: -10px;
   }
 
   .nav-links-display {
@@ -158,19 +156,23 @@
     width: max-content;
     padding: 10px;
     margin-left: 0;
-
   }
 
   .nav-link-off {
     display: none;
   }
 
-  .menu-icon-items{
+  .menu-icon-items {
     display: flex;
     flex-direction: column;
     gap: 0;
     max-height: 1rem;
     max-width: 1px;
     align-items: end;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

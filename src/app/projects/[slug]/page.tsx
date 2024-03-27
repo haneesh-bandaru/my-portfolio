@@ -83,11 +83,11 @@ export default function Page({ params }: DynamicProps) {
           <div className="h-fit bg-gray-500 p-5 mt-3 rounded-xl">
             <Typography variant="h5">{`Images:`}</Typography>
             <hr className="p-1" />
-            <div className="flex gap-5 overflow-scroll">
-              {project.images?.map((item, index) => (
+            {project.images?.map((item, index) => (
+              <div key={index} className="flex gap-5 overflow-scroll">
                 <Image src={item} alt="logo" height={250} width={500}></Image>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

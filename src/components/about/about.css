@@ -99,4 +99,8 @@
   .about-me-text h5 {
     font-size: large;
   }
+
+  .details-container h4 {
+    font-size: small;
+  }
 }
