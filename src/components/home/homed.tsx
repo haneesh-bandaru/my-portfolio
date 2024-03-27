@@ -1,11 +1,10 @@
 import Image from "next/image";
 import "./home.css";
-import haneeshImage from "../../assets/HaneeshBandaru.png";
+import haneeshImage from "@/assets/images/HaneeshBandaru.png";
 import { Button, Typography } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
 import { MdCode } from "react-icons/md";
-import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Homed = () => {
@@ -23,12 +22,12 @@ const Homed = () => {
             className="role-animation"
           />
           <div data-aos="fade-up" className="home-buttons">
-            <Button variant="contained" style={{ backgroundColor: "#27374D" }}>
+            <Button variant="contained" sx={{ backgroundColor: "#27374D" }}>
               Contact
             </Button>
             <Button
               variant="contained"
-              style={{ color: "#27374D", backgroundColor: "#ffffff" }}
+              sx={{ color: "#27374D", backgroundColor: "#ffffff" }}
             >
               {/* <a href="../../assets/downloads/haneeshbiosketch.pdf" download style={{textDecoration:"none",color:"#27374D",fontWeight:"400"}}> */}
               <a
@@ -53,7 +52,7 @@ const Homed = () => {
               <p>
                 <a href="https://github.com/haneesh-bandaru" target="_blank">
                   {" "}
-                  <AiFillGithub className="home-icons" />{" "}
+                  <FaGithub className="home-icons" />{" "}
                 </a>
               </p>
               <p>
@@ -70,7 +69,7 @@ const Homed = () => {
                   href="https://www.instagram.com/haneesh_bandaru/"
                   target="_blank"
                 >
-                  <AiFillInstagram className="home-icons" />
+                  <FaInstagram className="home-icons" />
                 </a>
               </p>
               <p>

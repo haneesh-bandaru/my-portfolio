@@ -1,6 +1,6 @@
 import { Paper, TextField, Typography } from "@mui/material";
 import "./contactme.css";
-import mail from "../../assets/mail.svg";
+import mail from "@/assets/images/mail.svg";
 import Image from "next/image";
 import { FaLinkedinIn } from "react-icons/fa";
 

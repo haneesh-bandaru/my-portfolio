@@ -1,82 +1,65 @@
-import Image from "next/image";
-import "./projects.css";
+"use client";
+import { useState } from "react";
 import { Button, Paper, Typography } from "@mui/material";
-import { Github } from "lucide";
-import gitEnabled from "../../assets/gitEnabled.png";
-import gitDisabled from "../../assets/gitDisabled.png";
-import project from "../../assets/project-Images/jntugv.png";
-import calculator from "../../assets/project-Images/calculator.png";
-import hopecare from "../../assets/project-Images/hopecare.jpeg";
-import climatecompass from "../../assets/project-Images/climatecompass.jpeg";
+import Image from "next/image";
+import Link from "next/link";
+import "./projects.css";
 
-const projectDetails = [
-  {
-    title: "University Website",
-    titleImage: project,
-    desc: `As the Front-End Lead for our university website, I spearheaded the development of a comprehensive
-    platform—a one-stop solution for every student. We meticulously crafted a user-friendly interface and
-    experience, ensuring seamless navigation.`,
-    website: "https://jntugv.edu.in/",
-    gitImage: gitDisabled,
-    gitLink: "",
-    state: "true",
-  },
-  {
-    title: "Hopecare",
-    titleImage: hopecare,
-    desc: `HopeCare, a pioneering application, transforms healthcare access by connecting users with local doctors,
-            allowing appointments irrespective of the doctor's hospital. It features two search options—geographical
-            and profession-based—providing a streamlined and personalized healthcare experience.`,
-    website: "https://hopecare.vercel.app/",
-    gitImage: gitEnabled,
-    gitLink: "https://github.com/haneesh-bandaru/hopecure",
-    state: "",
-  },
-  {
-    title: "Calculator App",
-    titleImage: calculator,
-    desc: `Experience the power of seamless calculations with our React Calculator App. Engineered 
-          with the latest web technologies, this application combines the efficiency of React.js 
-          with an intuitive user interface, delivering a responsive and interactive calculator experience.`,
-    website: "https://calculator-using-react.by-haneesh.vercel.app/",
-    gitImage: gitEnabled,
-    gitLink: "https://github.com/haneesh-bandaru/Calculator_Using_react",
-    state: "",
-  },
-  {
-    title: "Climate Compass",
-    titleImage: climatecompass,
-    desc: `Climate Compass is an intuitive application meticulously crafted for obtaining real-time weather updates
-          globally through a user-friendly search interface. Stay informed about weather conditions across the world
-          effortlessly with Climate Compass`,
-    website: "https://climatecompass.vercel.app/",
-    gitImage: gitEnabled,
-    gitLink: "https://github.com/haneesh-bandaru/hopecure",
-    state: "",
-  },
-  // {
-  //   title: "Climate Compass",
-  //   titleImage: climatecompass,
-  //   desc: "Explore the weather with ease using this simple and intuitive React-based weather app – your pocket-sized meteorologist",
-  //   website: "https://climatecompass.vercel.app/",
-  //   gitImage: gitEnabled,
-  //   gitLink: "https://github.com/haneesh-bandaru/hopecure",
-  //   state: "",
-  // },
-];
+import trailImage from "@/assets/images/trailImage.jpg";
+import projectDetails from "@/assets/data/projectDetails";
 
 const Projects = () => {
+  const [activeItem, setActiveItem] = useState("All");
+
+  // Filter projects based on activeItem
+  const filteredProjects =
+    activeItem === "All"
+      ? projectDetails
+      : projectDetails.filter((project) => project.category === activeItem);
   return (
-    <main className="proMain" id="projects">
+    <section className="proMain" id="projects">
       <Typography variant="h3">PROJECTS</Typography>
+      <nav className="flex bg-textColor justify-center mx-auto w-fit px-6 py-2 rounded-2xl shadow-lg">
+        <ul className="flex gap-10 items-center ">
+          <li
+            className={`px-4 py-1 rounded-xl transition-colors duration-300 ${
+              activeItem === "All" ? "bg-gray-50 shadow-md" : "text-white"
+            }`}
+            onClick={() => setActiveItem("All")}
+          >
+            All
+          </li>
+          <li
+            className={`px-4 py-1 rounded-xl transition-colors duration-300 ${
+              activeItem === "Web" ? "bg-gray-50 shadow-md" : "text-white"
+            }`}
+            onClick={() => setActiveItem("Web")}
+          >
+            Web
+          </li>
+          <li
+            className={`px-4 py-1 rounded-xl transition-colors duration-300 ${
+              activeItem === "Android" ? "bg-gray-50 shadow-md" : "text-white"
+            }`}
+            onClick={() => setActiveItem("Android")}
+          >
+            Android
+          </li>
+        </ul>
+      </nav>
       <div>
         <div className="prodisplay">
-          {projectDetails.map((item, index) => (
-            <Paper style={{minWidth:"21em"}} key={index} className="proDiv" elevation={5}>
+          {filteredProjects.map((item, index) => (
+            <Paper
+              style={{ minWidth: "21em" }}
+              key={index}
+              className="proDiv"
+              elevation={5}
+            >
               <div>
                 <Typography variant="h5">{item.title}</Typography>
                 <Image
-                  src={item.titleImage}
+                  src={item.titleImage || trailImage}
                   alt="hi"
                   height={150}
                   width={150}
@@ -84,19 +67,24 @@ const Projects = () => {
               </div>
               <div className="description-div">
                 <Typography variant="body1" className="description-desc">
-                  {item.desc}
+                  {item.desc.slice(0, 90)}...
+                  <Link
+                    href={`/projects/${item.title
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}`}
+                    className="text-blue-600"
+                  >
+                    View more
+                  </Link>
                 </Typography>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-around",
-                  marginBlockStart: "auto",
-                }}
-                className="buttons"
-              >
-                <Button variant="outlined" href={item.website} target="_blank">
+              <div className="buttons">
+                <Button
+                  variant="outlined"
+                  href={item.website}
+                  target="_blank"
+                  style={{ color: "white", backgroundColor: "#27374D" }}
+                >
                   View Project
                 </Button>
                 <Button
@@ -113,7 +101,7 @@ const Projects = () => {
         </div>
         <div></div>
       </div>
-    </main>
+    </section>
   );
 };
 

@@ -2,7 +2,24 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 6px; /* Width of the entire scrollbar */
+}
+
+/* Customize scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #27374d; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners of the thumb */
+}
+
+/* Customize scrollbar track on hover */
+::-webkit-scrollbar-track:hover {
+  background-color: #f1f1f1; /* Color of the scrollbar track on hover */
+}
 
 * {
   margin: 0;

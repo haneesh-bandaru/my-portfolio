@@ -1,10 +1,10 @@
 import Image from "next/image";
 import "./about.css";
-// import pc from "../../assets/OIG.jpeg";
+// import pc from "@/assets/images/OIG.jpeg";
 import { Paper, Typography } from "@mui/material";
-import experience from "../../assets/experience.png";
-import education from "../../assets/education.png";
-import myImg from "../../assets/HaneeshBandaru.png";
+import experience from "@/assets/images/experience.png";
+import education from "@/assets/images/education.png";
+import myImg from "@/assets/images/HaneeshBandaru.png";
 
 const About = () => {
   return (
@@ -29,29 +29,29 @@ const About = () => {
               <Image
                 src={experience}
                 alt="Experience icon"
-                className="icon"
+                className="mx-auto"
                 width={32}
                 height={32}
               />
-              <h3>Experience</h3>
-              <p>
+              <Typography variant="h4">Experience</Typography>
+              <Typography variant="body1">
                 1+ years <br />
                 Frontend Development
-              </p>
+              </Typography>
             </div>
             <div className="details-container">
               <Image
                 src={education}
                 alt="Experience icon"
-                className="icon"
+                className="mx-auto"
                 width={32}
                 height={32}
               />
-              <h3>Education</h3>
-              <p>
+              <Typography variant="h4">Education</Typography>
+              <Typography variant="body1">
                 B.Tech @ <br />
                 JNTU-GV
-              </p>
+              </Typography>
             </div>
           </div>
           <div className="about-me-text">
