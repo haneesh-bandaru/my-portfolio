@@ -54,6 +54,7 @@ const Projects = () => {
               key={index}
               className="proDiv"
               elevation={5}
+              sx={{ borderRadius: "30px" }}
             >
               <div>
                 <Typography variant="h5">{item.title}</Typography>
