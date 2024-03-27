@@ -1,10 +1,9 @@
 import Image from "next/image";
 import "./about.css";
 // import pc from "@/assets/images/OIG.jpeg";
-import { Paper, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import experience from "@/assets/images/experience.png";
 import education from "@/assets/images/education.png";
-import myImg from "@/assets/images/HaneeshBandaru.png";
 
 const About = () => {
   return (
@@ -33,7 +32,7 @@ const About = () => {
                 width={32}
                 height={32}
               />
-              <Typography variant="h4">Experience</Typography>
+              <Typography variant="h5">Experience</Typography>
               <Typography variant="body1">
                 1+ years <br />
                 Frontend Development
@@ -47,7 +46,7 @@ const About = () => {
                 width={32}
                 height={32}
               />
-              <Typography variant="h4">Education</Typography>
+              <Typography variant="h5">Education</Typography>
               <Typography variant="body1">
                 B.Tech @ <br />
                 JNTU-GV

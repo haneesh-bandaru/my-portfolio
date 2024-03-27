@@ -11,7 +11,6 @@ import projectDetails from "@/assets/data/projectDetails";
 const Projects = () => {
   const [activeItem, setActiveItem] = useState("All");
 
-  // Filter projects based on activeItem
   const filteredProjects =
     activeItem === "All"
       ? projectDetails
@@ -19,7 +18,7 @@ const Projects = () => {
   return (
     <section className="proMain" id="projects">
       <Typography variant="h3">PROJECTS</Typography>
-      <nav className="flex bg-textColor justify-center mx-auto w-fit px-6 py-2 rounded-2xl shadow-lg">
+      <nav className="flex bg-textColor mb-5 justify-center mx-auto w-fit px-6 py-2 rounded-2xl shadow-lg">
         <ul className="flex gap-10 items-center ">
           <li
             className={`px-4 py-1 rounded-xl transition-colors duration-300 ${
@@ -48,7 +47,7 @@ const Projects = () => {
         </ul>
       </nav>
       <div>
-        <div className="prodisplay">
+        <div className="flex flex-wrap gap-12 ml-5 ">
           {filteredProjects.map((item, index) => (
             <Paper
               style={{ minWidth: "21em" }}
@@ -63,6 +62,7 @@ const Projects = () => {
                   alt="hi"
                   height={150}
                   width={150}
+                  className="h-[150px]"
                 />
               </div>
               <div className="description-div">

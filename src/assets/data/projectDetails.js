@@ -5,13 +5,25 @@ import project from "@/assets/images/project-Images/jntugv.png";
 import calculator from "@/assets/images/project-Images/calculator.png";
 import hopecare from "@/assets/images/project-Images/hopecare.jpeg";
 import climatecompass from "@/assets/images/project-Images/climatecompass.jpeg";
+import gemini from "@/assets/images/gemini.png";
 import next from "@/assets/images/tech-stack/next.svg";
 import figma from "@/assets/images/tech-stack/figma.svg";
 import angular from "@/assets/images/tech-stack/angularjs.svg";
 import material from "@/assets/images/material-ui.svg";
+import expo from "@/assets/images/expo.svg";
+
 import clg1 from "@/assets/images/project-Images/clg1.png";
 import clg2 from "@/assets/images/project-Images/clg2.png";
 import clg3 from "@/assets/images/project-Images/clg3.png";
+
+import cc1 from "@/assets/images/project-Images/cc1.png";
+import cc2 from "@/assets/images/project-Images/cc2.png";
+
+import gcb1 from "@/assets/images/project-Images/gcb1.jpeg";
+import gcb2 from "@/assets/images/project-Images/gcb2.jpeg";
+
+import hc1 from "@/assets/images/project-Images/hc1.png";
+import hc2 from "@/assets/images/project-Images/hc2.png";
 
 const projectDetails = [
   {
@@ -28,7 +40,21 @@ const projectDetails = [
       { tech: "React Js", image: react },
       { tech: "Material UI", image: figma },
     ],
-    images: [clg1, clg2, clg3],
+    images: [clg2, clg1, clg3],
+  },
+  {
+    title: "Gemini Api GPT",
+    titleImage: gemini,
+    desc: `Gemini Chatbot Mobile App, powered by Expo, revolutionizes user interactions with its intuitive chat interface. Seamlessly integrated across iOS and Android platforms, it offers personalized recommendations and instant responses to user inquiries. With multi-language support and robust security measures, Gemini ensures a tailored and secure experience for users worldwide.`,
+    website: "https://example.com/",
+    gitImage: gitEnabled,
+    gitLink: "https://github.com/haneesh-bandaru/gemini-chatbot",
+    category: "Android", // Assigning category to each project
+    techUsed: [
+      { tech: "React Native", image: react },
+      { tech: "Expo", image: expo },
+    ],
+    images: [gcb1, gcb2],
   },
   {
     title: "Hopecare",
@@ -42,9 +68,8 @@ const projectDetails = [
     category: "Web", // Assigning category to each project
     techUsed: [
       { tech: "Angular Js", image: angular },
-      { tech: "Material UI", image: material },
     ],
-    images: [react, angular, next],
+    images: [hc1, hc2],
   },
   {
     title: "Calculator App",
@@ -60,7 +85,7 @@ const projectDetails = [
       { tech: "React Js", image: react },
       { tech: "Material UI", image: material },
     ],
-    images: [react, angular, next],
+    images: [calculator],
   },
   {
     title: "Climate Compass",
@@ -76,21 +101,7 @@ const projectDetails = [
       { tech: "React Js", image: react },
       { tech: "Material UI", image: material },
     ],
-    images: [react, angular, next],
-  },
-  {
-    title: "Gemini Api GPT",
-    // titleImage: anotherProjectImage,
-    desc: `Description of another project.`,
-    website: "https://example.com/",
-    gitImage: gitEnabled,
-    gitLink: "https://github.com/haneesh-bandaru/gemini-chatbot",
-    category: "Android", // Assigning category to each project
-    techUsed: [
-      { tech: "React Js", image: react },
-      { tech: "Material UI", image: material },
-    ],
-    images: [react, angular, next],
+    images: [cc1, cc2],
   },
 ];
 

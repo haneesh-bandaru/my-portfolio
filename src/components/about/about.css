@@ -78,10 +78,7 @@
   }
 
   .details-container {
-    padding: 2px;
-    width: 11rem;
-    height: 7rem;
-    padding: 0;
+    width: 12rem;
   }
 
   .about-me-text {
@@ -98,5 +95,9 @@
 
   .about-me-text h5 {
     font-size: large;
+  }
+
+  .details-container h4 {
+    font-size: small;
   }
 }

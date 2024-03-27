@@ -56,6 +56,10 @@ const NavBar = () => {
             Haneesh Bandaru.
           </Link>
         </div>
+
+
+
+        
         <div
           data-aos="fade-down"
           className={`nav-items ${

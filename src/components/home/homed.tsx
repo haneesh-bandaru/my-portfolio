@@ -22,13 +22,10 @@ const Homed = () => {
             className="role-animation"
           />
           <div data-aos="fade-up" className="home-buttons">
-            <Button variant="contained" sx={{ backgroundColor: "#27374D" }}>
+            <Button variant="contained" style={{ backgroundColor: "#27374D" }}>
               Contact
             </Button>
-            <Button
-              variant="contained"
-              sx={{ color: "#27374D", backgroundColor: "#ffffff" }}
-            >
+            <Button variant="contained" style={{ backgroundColor: "#fff" }}>
               {/* <a href="../../assets/downloads/haneeshbiosketch.pdf" download style={{textDecoration:"none",color:"#27374D",fontWeight:"400"}}> */}
               <a
                 href="https://drive.google.com/file/d/1381o7B0VUk4fnegWkFYff4zC7lUTwRs6/view?usp=sharing"
