@@ -50,6 +50,7 @@ export default function Page({ params }: DynamicProps) {
               variant="contained"
               href={project.website}
               target="_blank"
+              style={{ backgroundColor: "#27374D" }}
               className="text-white bg-textColor border-textColor hover:bg-white hover:text-textColor"
             >
               View Project
