@@ -22,10 +22,7 @@ const Homed = () => {
             className="role-animation"
           />
           <div data-aos="fade-up" className="home-buttons">
-            <Button
-              variant="contained"
-              className="bg-textColor hover:bg-textColor"
-            >
+            <Button variant="contained" style={{ backgroundColor: "#27374D" }}>
               Contact
             </Button>
             <Button variant="contained" className="bg-white hover:bg-white">
