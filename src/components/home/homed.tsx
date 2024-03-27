@@ -25,7 +25,7 @@ const Homed = () => {
             <Button variant="contained" style={{ backgroundColor: "#27374D" }}>
               Contact
             </Button>
-            <Button variant="contained" className="bg-white hover:bg-white">
+            <Button variant="contained" style={{ backgroundColor: "#fff" }}>
               {/* <a href="../../assets/downloads/haneeshbiosketch.pdf" download style={{textDecoration:"none",color:"#27374D",fontWeight:"400"}}> */}
               <a
                 href="https://drive.google.com/file/d/1381o7B0VUk4fnegWkFYff4zC7lUTwRs6/view?usp=sharing"
