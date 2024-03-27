@@ -40,7 +40,7 @@ const projectDetails = [
       { tech: "React Js", image: react },
       { tech: "Material UI", image: figma },
     ],
-    images: [clg1, clg2, clg3],
+    images: [clg2, clg1, clg3],
   },
   {
     title: "Gemini Api GPT",
