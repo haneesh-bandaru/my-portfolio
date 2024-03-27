@@ -9,10 +9,11 @@
 }
 
 .expMain {
-  height: 60vh;
+  /* height: 60vh; */
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 100px;
   padding-right: 100px;
   align-items: center;

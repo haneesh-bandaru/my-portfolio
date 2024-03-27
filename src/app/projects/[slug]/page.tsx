@@ -48,7 +48,8 @@ export default function Page({ params }: DynamicProps) {
           <div className="flex gap-6">
             <Button
               variant="contained"
-              href={project.gitLink}
+              href={project.website}
+              target="_blank"
               className="text-white bg-textColor border-textColor hover:bg-white hover:text-textColor"
             >
               View Project
@@ -67,8 +68,8 @@ export default function Page({ params }: DynamicProps) {
                 key={index}
                 className="flex bg-white p-5 justify-center rounded-2xl"
               >
-                <Typography variant="h6"> {item.tech}</Typography>
                 <Image src={item.image} height={32} width={32} alt="logo" />
+                <Typography variant="h6"> {item.tech}</Typography>
               </div>
             ))}
           </Stack>
@@ -89,8 +90,7 @@ export default function Page({ params }: DynamicProps) {
                   key={index}
                   src={item}
                   alt="logo"
-                  height={250}
-                  width={500}
+                  className="h-[250px] w-[500px]"
                 ></Image>
               ))}
             </div>
