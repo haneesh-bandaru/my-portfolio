@@ -4,7 +4,6 @@ import Homed from "@/components/home/homed";
 import About from "@/components/about/about";
 import Experience from "@/components/mytechstack/mytechstack";
 import Projects from "@/components/projects/projects";
-import Timelineevent from "@/components/timelineevent/timelineevent";
 import Contactme from "@/components/contactme/contactme";
 
 export default function Home() {
