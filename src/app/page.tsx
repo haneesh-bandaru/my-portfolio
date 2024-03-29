@@ -6,6 +6,7 @@ import Experience from "@/components/mytechstack/mytechstack";
 import Projects from "@/components/projects/projects";
 import Contactme from "@/components/contactme/contactme";
 
+
 export default function Home() {
   return (
     <main style={{ backgroundColor: "#DDE6ED" }}>
