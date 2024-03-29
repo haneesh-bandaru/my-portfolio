@@ -15,6 +15,7 @@
     "@mui/icons-material": "^5.15.14",
     "@mui/lab": "^5.0.0-alpha.153",
     "@mui/material": "^5.14.18",
+    "@vercel/analytics": "^1.2.2",
     "animate.css": "^4.1.1",
     "emailjs-com": "^3.2.0",
     "lucide": "^0.293.0",
