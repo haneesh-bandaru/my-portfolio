@@ -80,22 +80,7 @@ const projectDetails = [
     ],
     images: [hc1, hc2],
   },
-  {
-    title: "Calculator App",
-    titleImage: calculator,
-    desc: `Experience the power of seamless calculations with our React Calculator App. Engineered 
-          with the latest web technologies, this application combines the efficiency of React.js 
-          with an intuitive user interface, delivering a responsive and interactive calculator experience.`,
-    website: "https://calculator-using-react.by-haneesh.vercel.app/",
-    gitImage: gitEnabled,
-    gitLink: "https://github.com/haneesh-bandaru/Calculator_Using_react",
-    category: "Web", // Assigning category to each project
-    techUsed: [
-      { tech: "React Js", image: react },
-      { tech: "Material UI", image: material },
-    ],
-    images: [calculator],
-  },
+
   {
     title: "Climate Compass",
     titleImage: climatecompass,
@@ -127,6 +112,21 @@ const projectDetails = [
       { tech: "Aceternity", image: Aceternity },
     ],
     images: [currencyC1, currencyC2],
+  }, {
+    title: "Calculator App",
+    titleImage: calculator,
+    desc: `Experience the power of seamless calculations with our React Calculator App. Engineered 
+          with the latest web technologies, this application combines the efficiency of React.js 
+          with an intuitive user interface, delivering a responsive and interactive calculator experience.`,
+    website: "https://calculator-using-react.by-haneesh.vercel.app/",
+    gitImage: gitEnabled,
+    gitLink: "https://github.com/haneesh-bandaru/Calculator_Using_react",
+    category: "Web", // Assigning category to each project
+    techUsed: [
+      { tech: "React Js", image: react },
+      { tech: "Material UI", image: material },
+    ],
+    images: [calculator],
   },
 ];
 
