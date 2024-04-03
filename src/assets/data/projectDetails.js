@@ -7,6 +7,8 @@ import hopecare from "@/assets/images/project-Images/hopecare.jpeg";
 import climatecompass from "@/assets/images/project-Images/climatecompass.jpeg";
 import gemini from "@/assets/images/gemini.png";
 import next from "@/assets/images/tech-stack/next.svg";
+import geminiChat from "@/assets/images/project-Images/geminiChat.png";
+import currencyApp from "@/assets/images/project-Images/currencyApp.png";
 import figma from "@/assets/images/tech-stack/figma.svg";
 import angular from "@/assets/images/tech-stack/angularjs.svg";
 import material from "@/assets/images/material-ui.svg";
@@ -24,6 +26,13 @@ import gcb2 from "@/assets/images/project-Images/gcb2.jpeg";
 
 import hc1 from "@/assets/images/project-Images/hc1.png";
 import hc2 from "@/assets/images/project-Images/hc2.png";
+
+import currencyC1 from "@/assets/images/project-Images/currencyC1.png";
+import currencyC2 from "@/assets/images/project-Images/currencyC2.png";
+
+import Aceternity from "@/assets/images/tech-stack/Aceternity.png";
+import tailwind from "@/assets/images/tech-stack/tailwindcss.svg";
+
 
 const projectDetails = [
   {
@@ -44,7 +53,7 @@ const projectDetails = [
   },
   {
     title: "Gemini Api GPT",
-    titleImage: gemini,
+    titleImage: geminiChat,
     desc: `Gemini Chatbot Mobile App, powered by Expo, revolutionizes user interactions with its intuitive chat interface. Seamlessly integrated across iOS and Android platforms, it offers personalized recommendations and instant responses to user inquiries. With multi-language support and robust security measures, Gemini ensures a tailored and secure experience for users worldwide.`,
     website: "https://example.com/",
     gitImage: gitEnabled,
@@ -102,6 +111,22 @@ const projectDetails = [
       { tech: "Material UI", image: material },
     ],
     images: [cc1, cc2],
+  },
+
+  {
+    title: "Currency Converter",
+    titleImage: currencyApp,
+    desc: `The Currency Converter app, available at https://currency--convertor.vercel.app/, provides a seamless solution for converting currencies effortlessly. With its intuitive interface, users can easily input amounts and select currencies to instantly see accurate conversions. Whether for travel, business, or personal finance, this app simplifies currency exchange with efficiency and convenience.`,
+    website: "https://currency--convertor.vercel.app/",
+    gitImage: gitEnabled,
+    gitLink: "https://github.com/haneesh-bandaru/gemini-chatbot",
+    category: "Android", // Assigning category to each project
+    techUsed: [
+      { tech: "React Js", image: react },
+      { tech: "TailWind CSS", image: tailwind },
+      { tech: "Aceternity", image: Aceternity },
+    ],
+    images: [currencyC1, currencyC2],
   },
 ];
 
