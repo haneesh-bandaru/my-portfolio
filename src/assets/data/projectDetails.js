@@ -101,7 +101,7 @@ const projectDetails = [
   {
     title: "Currency Converter",
     titleImage: currencyApp,
-    desc: `The Currency Converter app, available at https://currency--convertor.vercel.app/, provides a seamless solution for converting currencies effortlessly. With its intuitive interface, users can easily input amounts and select currencies to instantly see accurate conversions. Whether for travel, business, or personal finance, this app simplifies currency exchange with efficiency and convenience.`,
+    desc: `The Currency Converter app, provides a seamless solution for converting currencies effortlessly. With its intuitive interface, users can easily input amounts and select currencies to instantly see accurate conversions. Whether for travel, business, or personal finance, this app simplifies currency exchange with efficiency and convenience.`,
     website: "https://currency--convertor.vercel.app/",
     gitImage: gitEnabled,
     gitLink: "https://github.com/haneesh-bandaru/gemini-chatbot",

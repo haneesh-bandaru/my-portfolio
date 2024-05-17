@@ -15,11 +15,13 @@
 
 .proMain h3 {
   display: flex;
+  padding-bottom: 15px;
   justify-content: center;
 }
 
 .proDiv {
   display: flex;
+  flex-wrap: wrap;
   grid-column: 2;
   flex-direction: column;
   align-items: center;

@@ -18,7 +18,7 @@ const Projects = () => {
   return (
     <section className="proMain" id="projects">
       <Typography variant="h3">PROJECTS</Typography>
-      <nav className="flex bg-textColor mb-5 justify-center mx-auto w-fit px-6 py-2 rounded-2xl shadow-lg">
+      <nav className="flex bg-textColor mb-[30px] mt-[15px] justify-center mx-auto w-fit px-6 py-2 rounded-2xl shadow-lg ">
         <ul className="flex gap-10 items-center ">
           <li
             className={`px-4 py-1 rounded-xl transition-colors duration-300 ${
@@ -68,7 +68,7 @@ const Projects = () => {
               </div>
               <div className="description-div">
                 <Typography variant="body1" className="description-desc">
-                  {item.desc.slice(0, 90)}...
+                  {item.desc.slice(0, 85)}...
                   <Link
                     href={`/projects/${item.title
                       .toLowerCase()
@@ -86,7 +86,7 @@ const Projects = () => {
                   target="_blank"
                   style={{ color: "white", backgroundColor: "#27374D" }}
                 >
-                  View Project
+                  Live Link
                 </Button>
                 <Button
                   variant="text"
