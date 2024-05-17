@@ -52,7 +52,7 @@ export default function Page({ params }: DynamicProps) {
               target="_blank"
               style={{ backgroundColor: "#27374D" }}
             >
-              View Project
+              Project Link
             </Button>
             <Image src={project.gitImage} alt="github" height={36.5}></Image>
           </div>
